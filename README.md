@@ -33,8 +33,13 @@ Extras:
 Test Drive your application using Cypress and Jest / React Testing library
 Deploy your applications on Heroku or AWS
 
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+APIS IN USE
+Insight (Weather Data)
+Mars Rover Photos
+APOD (Astronomy Photo of the Day)
 
 LINKS:
+NASA API Homepage: https://api.nasa.gov
+APOD : https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 Insight Documenation : https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf

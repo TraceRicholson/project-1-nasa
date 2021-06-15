@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/NASA_API_KEY
+/components/NASA_API_KEY
+

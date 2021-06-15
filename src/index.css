@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ledddd-1562858473.jpg?resize=2000:*');
+  color: white
 }
 
 code {
