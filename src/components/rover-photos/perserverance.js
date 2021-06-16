@@ -4,12 +4,12 @@ import '../roverphotos.css'
 
 export default function Curiosity () {
 
-    const [curiosityPics, setCuriosityPics] = useState([])
+    const [perseverancePics, setPerseverancePics] = useState([])
 
     useEffect(() => {
-        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=73BdaPJFZ0p7FxCRPfLs5wRmpQPJHRYMQcFD3abh')
+        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos?api_key=73BdaPJFZ0p7FxCRPfLs5wRmpQPJHRYMQcFD3abh')
             .then(res => res.json())
-            .then(res => setCuriosityPics(res.latest_photos))
+            .then(res => setPerseverancePics(res.latest_photos))
         }, [])
 
 
@@ -22,21 +22,20 @@ return (
             <td><NavLink exact to="/rover-photos/perseverance" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Perserverance</NavLink></td>
             <td><NavLink exact to="/rover-photos/spirit" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink></td>
         </table>
-        <h1>Curiosity is currently active and operational.  See latest images below.</h1>
-        <div className='image-list'>
-        {curiosityPics.map(img => {
+    <h1>Perseverance!!</h1>
+    <h2>Perserverance is NASA's most recent rover on Mars. Perserverance was sent to Mars via NASA mission "Mars 2020".</h2>
+    <h3>Operating Status:</h3>
+
+        {perseverancePics.map(img => {
             return (
                 <>
                 <img className='imgURL' src={img.img_src} alt=''/>
                 </>
             )
         })}
-    </div>
 
     </div>
 
 )
 
 }
-
-// https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=73BdaPJFZ0p7FxCRPfLs5wRmpQPJHRYMQcFD3abh

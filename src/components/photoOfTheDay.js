@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react"
+import '../App.css'
+import Box from '@material-ui/core/Box'
+import { sizing, positions } from '@material-ui/system';
+
 
 
 export default function PhotoOfTheDay () {
@@ -16,10 +20,15 @@ useEffect(() => {
 
 
 return (
-  <div>
+  <Box bgcolor="text.secondary" align="center"
+  justify="center">
+    <h1>This is your photo of the day!!</h1>
     <h1>Does this photo suck?</h1>
-    <img src={pod.url}></img>
-  </div>
+    <img src={pod.url} alt='NASA Photo of the Day'></img>
+    <p>{pod.explanation}</p>
+
+  </Box>
+
 
 
 )}
