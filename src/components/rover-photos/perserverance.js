@@ -1,9 +1,21 @@
 import { useState, useEffect } from "react"
 import { Link, NavLink } from 'react-router-dom'
 import '../roverphotos.css'
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 
 export default function Curiosity () {
-
+    const classes = useStyles()
     const [perseverancePics, setPerseverancePics] = useState([])
 
     useEffect(() => {
@@ -16,15 +28,29 @@ export default function Curiosity () {
 return (
 
     <div>
-        <table id="rovernavlink">
-            <td><NavLink exact to="/rover-photos/curiosity" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Curiosity</NavLink></td>
-            <td><NavLink exact to="/rover-photos/opportunity" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Opportunity</NavLink></td>
-            <td><NavLink exact to="/rover-photos/perseverance" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Perserverance</NavLink></td>
-            <td><NavLink exact to="/rover-photos/spirit" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink></td>
-        </table>
-    <h1>Perseverance!!</h1>
-    <h2>Perserverance is NASA's most recent rover on Mars. Perserverance was sent to Mars via NASA mission "Mars 2020".</h2>
-    <h3>Operating Status:</h3>
+        <div className={classes.root}>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/curiosity"
+            style={{fontWeight: "bold", color: "white", textDecoration: "none"}} >Curiosity</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/opportunity" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Opportunity</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/perseverance" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Perseverance</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/spirit" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink>
+        </Button>
+        </div>
+
+    <h1 id="Pheader">Perseverance</h1>
+        <p>Operating Status: Active</p>
+        <h2>NASA Mission: Mars 2020.</h2>
+        <h2>Mission Objectives:Search for past signs of life</h2>
+            <h2>Test new technologies to aid future human missions to Mars.</h2>
+
+
 
         {perseverancePics.map(img => {
             return (

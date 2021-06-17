@@ -1,9 +1,21 @@
 import { useState, useEffect } from "react"
 import { Link, NavLink } from 'react-router-dom'
 import '../roverphotos.css'
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 
 export default function Curiosity () {
-
+    const classes = useStyles()
     const [curiosityPics, setCuriosityPics] = useState([])
 
     useEffect(() => {
@@ -16,12 +28,21 @@ export default function Curiosity () {
 return (
 
     <div>
-        <table id="rovernavlink">
-            <td><NavLink exact to="/rover-photos/curiosity" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Curiosity</NavLink></td>
-            <td><NavLink exact to="/rover-photos/opportunity" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Opportunity</NavLink></td>
-            <td><NavLink exact to="/rover-photos/perseverance" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Perserverance</NavLink></td>
-            <td><NavLink exact to="/rover-photos/spirit" activeStyle={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink></td>
-        </table>
+        <div className={classes.root}>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/curiosity"
+            style={{fontWeight: "bold", color: "white", textDecoration: "none"}} >Curiosity</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/opportunity" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Opportunity</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/perseverance" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Perseverance</NavLink>
+        </Button>
+        <Button variant="contained" color="primary">
+            <NavLink exact to="/rover-photos/spirit" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink>
+        </Button>
+        </div>
         <h1>Curiosity is currently active and operational.  See latest images below.</h1>
         <div className='image-list'>
         {curiosityPics.map(img => {
