@@ -44,12 +44,15 @@ return (
         </Button>
         </div>
 
-    <h1 id="Pheader">Perseverance</h1>
-        <p>Operating Status: Active</p>
-        <h2>NASA Mission: Mars 2020.</h2>
-        <h2>Mission Objectives:Search for past signs of life</h2>
-            <h2>Test new technologies to aid future human missions to Mars.</h2>
+    <h1>Perseverance</h1>
+        <div id="aboutPerseverance">
+            <h3>Operating Status: Active</h3>
+            <h3>NASA Mission: Mars 2020.</h3>
+            <ul id="perseveranceObjectives"> Mission Objectives: </ul>
+                <li> Test new technologies to aid future human missions to Mars.</li>
+                <li> Search for past signs of life </li>
 
+        </div>
 
 
         {perseverancePics.map(img => {

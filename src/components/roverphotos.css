@@ -19,7 +19,8 @@
   tranfrom: scale(1.1);
 }
 
-#pstatus {
-  color: green;
+#aboutPerseverance {
+  color: white;
   display: list-item;
+  text-align: left;
 }
