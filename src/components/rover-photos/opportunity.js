@@ -48,8 +48,23 @@ return (
             <NavLink exact to="/rover-photos/spirit" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink>
         </Button>
         </div>
-    <h1>Opportunity is no longer active.  It broadcast its last message on June 10, 2019.</h1>
+
+        <h1>Opportunity</h1>
+        <div id="aboutPerseverance">
+            <h3>Operating Status: Inactive. Last broadcast message was on June 10, 2019</h3>
+            <h3>NASA Mission: Mars 2020.</h3>
+            <h3> Mission Objectives: </h3>
+                <li> Test new technologies to aid future human missions to Mars</li>
+                <li> Determine whether life ever existed on Mars</li>
+                <li> Characterise the climate of Mars </li>
+                <li> Characterise the geology of Mars </li>
+
+        </div>
     </div>
+
+
+
+
     <div className='image-list'>
         {opportunityPics.map(img => {
             return (
