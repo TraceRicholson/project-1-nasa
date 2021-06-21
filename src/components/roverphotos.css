@@ -23,4 +23,6 @@
   color: white;
   display: list-item;
   text-align: left;
+  font-size: large;
+  font-weight: bold;
 }

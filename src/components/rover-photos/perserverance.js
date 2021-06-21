@@ -48,9 +48,11 @@ return (
         <div id="aboutPerseverance">
             <h3>Operating Status: Active</h3>
             <h3>NASA Mission: Mars 2020.</h3>
-            <ul id="perseveranceObjectives"> Mission Objectives: </ul>
-                <li> Test new technologies to aid future human missions to Mars.</li>
-                <li> Search for past signs of life </li>
+            <h3 id="perseveranceObjectives"> Mission Objectives: </h3>
+                <li> Test new technologies to aid future human missions to Mars</li>
+                <li> Determine whether life ever existed on Mars</li>
+                <li> Characterise the climate of Mars </li>
+                <li> Characterise the geology of Mars </li>
 
         </div>
 
