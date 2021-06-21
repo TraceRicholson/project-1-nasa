@@ -45,7 +45,17 @@ return (
             <NavLink exact to="/rover-photos/spirit" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink>
         </Button>
     </div>
-    <h1>Spirit is no longer active.  It broadcast its last message on May 25, 2011.</h1>
+    <h1>Spirit</h1>
+
+    <div id="aboutSpirit">
+            <h3>Operating Status: Inactive. Last broadcast message was on May 25, 2011.</h3>
+            <h3>NASA Mission: MER-A.</h3>
+            <h3> Mission Objectives: </h3>
+                <li> Spirit and it's twin rover Opportunity were both tasked with studying sites on Mars where conditions may have been favorable for life</li>
+                <li> Sprit studied the history of climate and water at sites on Mars where conditions may once have been favorable to life. </li>
+        </div>
+
+
     <div className='image-list'>
         {spiritPics.map(img => {
             return (

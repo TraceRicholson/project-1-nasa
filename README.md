@@ -35,7 +35,7 @@ Extras:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 APIS IN USE
-Curiosity Weather (Weather Data)
+Curiosity REMS (Rover Environmental Monitoring Station) (Weather)
 Mars Rover Photos
 APOD (Astronomy Photo of the Day)
 

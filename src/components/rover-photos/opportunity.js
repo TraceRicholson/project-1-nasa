@@ -52,6 +52,20 @@ return (
 
     </div>
 
+    <h1>Opportunity</h1>
+        <div id="aboutOpportunity">
+            <h3>Operating Status: Inactive. Last broadcast message was on June 10, 2018</h3>
+            <h3>NASA Mission: MER-B.</h3>
+            <h3> Mission Objectives: </h3>
+                <li> Opportunity and it's twin rover Spirit were both tasked with studying sites on Mars where conditions may have been favorable for life.</li>
+            <h3> Mission Findings: </h3>
+                <li> Mars was soaked in salt water. </li>
+                <li> Mars had a warm climate, a thicker atmosphere, and neutral-pH water levels.</li>
+                <li> Mars had hot water sources ie. Hot springs and hot steam vents. </li>
+                <li> Mars had active volcanoes. </li>
+                <li> Mars had flowing water ie. Rivers, Lakes, etc. </li>
+        </div>
+
 
 
 

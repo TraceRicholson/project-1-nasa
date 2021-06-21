@@ -43,7 +43,19 @@ return (
             <NavLink exact to="/rover-photos/spirit" style={{fontWeight: "bold", color: "white", textDecoration: "none"}}>Spirit</NavLink>
         </Button>
         </div>
-        <h1>Curiosity is currently active and operational.  See latest images below.</h1>
+
+        <h1>Curiosity</h1>
+
+        <div id="aboutCuriosity">
+            <h3>Operating Status: Active</h3>
+            <h3>NASA Mission: Mars 2011.</h3>
+            <h3> Mission Objectives: </h3>
+                <li>Survey Gale Crater for signs of past life. </li>
+                <li>Collect and Analyze Martian geology. </li>
+        </div>
+
+
+
         <div className='image-list'>
         {curiosityPics.map(img => {
             return (

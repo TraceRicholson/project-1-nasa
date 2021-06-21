@@ -26,3 +26,27 @@
   font-size: large;
   font-weight: bold;
 }
+
+#aboutOpportunity {
+  color: white;
+  display: list-item;
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+
+#aboutCuriosity {
+  color: white;
+  display: list-item;
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+
+#aboutSpirit {
+  color: white;
+  display: list-item;
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
