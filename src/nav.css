@@ -1,8 +1,6 @@
-.Navbar, .Navbar li {
-  display: flex;
-}
-.Navbar {
 
+.Navbar {
+  display: flex;
   list-style-type: none;
   width: 100vw;
   max-height: 5vh;
@@ -15,7 +13,6 @@
 }
 
 .Navbar li {
-
   justify-content: space-around;
   padding: 8px;
 }
